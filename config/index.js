@@ -1,3 +1,3 @@
 const dev = process.env.NODE_ENV !== 'production'
 
-export const server = dev ? 'http://localhost:3000' : 'https://next-js-crash-course-2021.vercel.app'
+export const server = dev ? 'https://my-json-server.typicode.com/YukiT1990/Next.js-Crash-Course-2021/db' : 'https://my-json-server.typicode.com/YukiT1990/Next.js-Crash-Course-2021/db'

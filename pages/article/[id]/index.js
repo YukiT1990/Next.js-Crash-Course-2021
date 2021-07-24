@@ -33,7 +33,8 @@ const Article = ({ article }) => {
 
 export const getStaticProps = async (context) => {
   // const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${context.params.id}`)
-  const res = await fetch(`${server}/api/articles/${context.params.id}`)
+  // const res = await fetch(`${server}/api/articles/${context.params.id}`)
+  const res = await fetch(`https://my-json-server.typicode.com/YukiT1990/Next.js-Crash-Course-2021/articles/${context.params.id}`)
 
 
   const article = await res.json()
@@ -47,7 +48,8 @@ export const getStaticProps = async (context) => {
 
 export const getStaticPaths = async () => {
   // const res = await fetch(`https://jsonplaceholder.typicode.com/posts`)
-  const res = await fetch(`${server}/api/articles`)
+  // const res = await fetch(`${server}/api/articles`)
+  const res = await fetch(`https://my-json-server.typicode.com/YukiT1990/Next.js-Crash-Course-2021/articles`)
 
   const articles = await res.json()
 
